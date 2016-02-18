@@ -1,0 +1,23 @@
+{
+    "name": "kevinsimard/combinatorics",
+    "description": "Mathematical algorithms concerning the study of finite or countable discrete structures.",
+    "keywords": ["mathematical", "algorithms", "permutations"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Simard",
+            "email": "kev.simard@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kevinsimard\\Combinatorics\\": "src/"
+        }
+    }
+}
