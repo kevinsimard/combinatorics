@@ -4,7 +4,6 @@
 
 ## Usage
 
-
 You may add new elements to the list by using the `add` method:
 
 ```php
@@ -71,4 +70,4 @@ foreach (Combinatorics::permutations($elements) as $value) {
 
 ## License
 
-This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
