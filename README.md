@@ -31,8 +31,8 @@ $instance->reset();
 
 $elements = ['foo', 'bar', 'baz'];
 
-$instance = new Combinatorics();
-foreach ($instance->permutations($elements) as $value) {
+$instance = new Combinatorics($elements);
+foreach ($instance->permutations() as $value) {
     ...
 }
 
