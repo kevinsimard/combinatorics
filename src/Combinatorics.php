@@ -10,8 +10,7 @@ class Combinatorics
     protected $elements;
 
     /**
-     * @param array $elements
-     *
+     * @param  array  $elements
      * @return void
      */
     public function __construct(array $elements = [])
@@ -20,8 +19,7 @@ class Combinatorics
     }
 
     /**
-     * @param mixed $element
-     *
+     * @param  mixed  $element
      * @return $this
      */
     public function add($element)
@@ -50,9 +48,8 @@ class Combinatorics
     }
 
     /**
-     * @param string $method
-     * @param array $parameters
-     *
+     * @param  string  $method
+     * @param  array  $parameters
      * @return mixed
      */
     public function __call($method, array $parameters)
@@ -63,9 +60,8 @@ class Combinatorics
     }
 
     /**
-     * @param string $method
-     * @param array $parameters
-     *
+     * @param  string  $method
+     * @param  array  $parameters
      * @return mixed
      */
     public static function __callStatic($method, array $parameters)
@@ -76,8 +72,7 @@ class Combinatorics
     }
 
     /**
-     * @param array $elements
-     *
+     * @param  array  $elements
      * @return \Generator
      */
     protected function permutations(array $elements)
