@@ -4,7 +4,7 @@ use Kevinsimard\Combinatorics\Combinatorics;
 
 class CombinatoricsTest extends PHPUnit_Framework_TestCase
 {
-    public function testAddElements()
+    public function test_add_adds_element()
     {
         $instance = new Combinatorics(['foo', 'bar']);
 
@@ -14,7 +14,7 @@ class CombinatoricsTest extends PHPUnit_Framework_TestCase
         $this->assertEquals(['foo', 'bar', 'baz', 'qux'], $instance->elements());
     }
 
-    public function testResetElements()
+    public function test_reset_resets_elements()
     {
         $instance = new Combinatorics(['foo', 'bar']);
 
@@ -23,14 +23,14 @@ class CombinatoricsTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([], $instance->elements());
     }
 
-    public function testElementsGetter()
+    public function test_getter_returns_elements()
     {
         $instance = new Combinatorics(['foo', 'bar']);
 
         $this->assertEquals(['foo', 'bar'], $instance->elements());
     }
 
-    public function testPermutationsWithNoElement()
+    public function test_permutations_with_no_element()
     {
         $instance = new Combinatorics();
 
@@ -40,7 +40,7 @@ class CombinatoricsTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([[]], $values);
     }
 
-    public function testPermutationsWithOneElement()
+    public function test_permutations_with_one_element()
     {
         $instance = new Combinatorics(['foo']);
 
@@ -50,7 +50,7 @@ class CombinatoricsTest extends PHPUnit_Framework_TestCase
         $this->assertEquals([['foo']], $values);
     }
 
-    public function testPermutationsWithTwoElements()
+    public function test_permutations_with_two_elements()
     {
         $instance = new Combinatorics(['foo', 'bar']);
 
@@ -63,7 +63,7 @@ class CombinatoricsTest extends PHPUnit_Framework_TestCase
         ], $values);
     }
 
-    public function testPermutationsWithThreeElements()
+    public function test_permutations_with_three_elements()
     {
         $instance = new Combinatorics(['foo', 'bar', 'baz']);
 
