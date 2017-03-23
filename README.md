@@ -62,11 +62,11 @@ foreach (Combinatorics::permutations($elements) as $value) {
     ├── .gitattributes
     ├── .gitignore
     ├── .travis.yml
-    ├── LICENSE.txt
+    ├── LICENSE.md
+    ├── README.md
     ├── composer.json
     ├── composer.lock
-    ├── phpunit.xml
-    └── readme.md
+    └── phpunit.xml
 
 ## License
 
